@@ -81,6 +81,7 @@
         };
 
         keymap {
+
                 compatible = "zmk,keymap";
 
                 default_layer {
@@ -121,8 +122,7 @@
    &none &none &none     &none       &msc SCRL_LEFT &msc SCRL_RIGHT    &none          &none          &none        &none           &none &none
                          &trans      &trans         &trans             &trans         &trans         &trans
                         >;
-
-        };
+                };
                 mac_layer {
                         display-name = "MAC";
                         bindings = <
@@ -131,7 +131,7 @@
    &none &none         &none     &kp F5  &kp F11       &kp F12          &kp C_MUTE   &kp LC(LEFT) &kp LC(RIGHT) &none          &kp LG(LA(ESC)) &none
                                  &trans &trans        &trans            &trans       &trans       &trans
                         >;
-        };
+                };
 
                 win_layer {
                         display-name = "WIN";
@@ -141,7 +141,7 @@
    &none &none         &none            &kp F5        &kp F11          &kp F12          &kp C_MUTE   &none      &none         &none             &kp LA(F4)    &none
                                         &trans        &trans           &trans           &trans       &trans       &trans
                         >;
-        };
+                };
 
                 bt_and_bl {
                         display-name = "BTL";
@@ -151,7 +151,9 @@
    &none &none        &none &none  &none  &none     &bt BT_SEL 2 &none        &none  &bt BT_CLR   &none       &none
                             &trans &trans &trans    &trans       &trans       &trans
                         >;
-        };
+                };
+    
+    };
 
 
 };
